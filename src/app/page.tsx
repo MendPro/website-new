@@ -75,7 +75,7 @@ function FeatureSection() {
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/app.png"
+          src="/screenshots/panel-screenshot.png"
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
         />
       </Container>
@@ -88,7 +88,7 @@ function BentoSection() {
     <Container>
       <Subheading>Sales</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+        Beyond scheduling — your all-in-one content, conversations, accounts and customer management tool.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
