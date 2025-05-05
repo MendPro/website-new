@@ -13,11 +13,16 @@ import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Plan } from '@/components/plan'
 import { Screenshot } from '@/components/screenshot'
-import ImageCarousel from '@/components/slidingsocial'
+// import ImageCarousel from '@/components/slidingsocial'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
+
+import dynamic from 'next/dynamic';
+
+const ImageCarousel = dynamic(() => import('@/components/slidingsocial'), { ssr: false });
+
 
 export const metadata: Metadata = {
   description:
