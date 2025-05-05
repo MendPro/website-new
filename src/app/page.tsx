@@ -70,7 +70,7 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          AI-powered with built in business logic
+          AI-powered with built-in business logic
         </Heading>
         <Screenshot
           width={1216}
