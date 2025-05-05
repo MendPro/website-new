@@ -14,7 +14,7 @@ export function Plan() {
                 <p>PLAN.</p>
                 <p>POST.</p>
                 <p>CLOSE.</p>
-                <p className='text-'>REPEAT.</p>
+                <p className='text-white'>REPEAT.</p>
             </motion.div>
         </div>
     );
