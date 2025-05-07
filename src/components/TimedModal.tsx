@@ -14,7 +14,7 @@ export default function TimedModal() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true)
-    }, 6000) 
+    }, 10000) 
 
     return () => clearTimeout(timer)
   }, [])
