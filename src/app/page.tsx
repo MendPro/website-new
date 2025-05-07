@@ -1,3 +1,5 @@
+
+
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -15,13 +17,16 @@ import { Plan } from '@/components/plan'
 import { Screenshot } from '@/components/screenshot'
 // import ImageCarousel from '@/components/slidingsocial'
 import { Testimonials } from '@/components/testimonials'
+import TimedModal from '@/components/TimedModal'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 
+
 import dynamic from 'next/dynamic';
 
 const ImageCarousel = dynamic(() => import('@/components/slidingsocial'), { ssr: false });
+
 
 
 export const metadata: Metadata = {
@@ -103,6 +108,8 @@ function BentoSection() {
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
+
+        
           eyebrow="Analysis"
           title="Undercut your competitors"
           description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
@@ -215,6 +222,8 @@ export default function Home() {
       </main>
       <Testimonials />
       <Footer />
+
+      <TimedModal />
     </div>
   )
 }
