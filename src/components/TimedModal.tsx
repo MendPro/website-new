@@ -19,7 +19,9 @@ export default function TimedModal() {
     return () => clearTimeout(timer)
   }, [])
 
-  const handleClose = () => setIsOpen(false)
+
+ const handleClose = () => setIsOpen(false)
+
 
   return (
     <ModalWrapper isOpen={isOpen} onClose={handleClose}>

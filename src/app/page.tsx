@@ -155,7 +155,7 @@ function DarkBentoSection() {
   return (
     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
       <Container>
-        <Subheading dark>Outreach</Subheading>
+        <Subheading dark>Post</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
           Customer outreach has never been easier.
         </Heading>
@@ -338,8 +338,8 @@ export default function Home() {
         <DarkBentoSection />
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
 
-        <BentoSection_Close />
-        <DarkBentoSection_Repeat />
+          <BentoSection_Close />
+          <DarkBentoSection_Repeat />
         </div>
 
       </main>
