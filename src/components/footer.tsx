@@ -1,7 +1,7 @@
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
 import { Button } from './button'
 import { Container } from './container'
-import { Gradient } from './gradient'
+import { Gradient, Gradient_Footer } from './gradient'
 import { Link } from './link'
 import { Logo } from './logo'
 import { Subheading } from './text'
@@ -156,7 +156,7 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative">
+      <Gradient_Footer className="relative">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
           <CallToAction />
@@ -187,7 +187,7 @@ export function Footer() {
             </PlusGridRow>
           </PlusGrid>
         </Container>
-      </Gradient>
+      </Gradient_Footer>
     </footer>
   )
 }

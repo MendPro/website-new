@@ -14,6 +14,20 @@ export function Gradient({
     />
   )
 }
+export function Gradient_Footer({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<'div'>) {
+  return (
+    <div
+      {...props}
+      className={clsx(
+        className,
+        'bg-linear-115 from-[#f3ff8d] from-28% via-[#7dd9c7]  sm:bg-linear-145',
+      )}
+    />
+  )
+}
 
 export function GradientBackground() {
   return (
