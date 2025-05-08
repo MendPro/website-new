@@ -21,7 +21,7 @@ export default function ContinuousScroll() {
 
   return (
     <div
-      className="overflow-hidden w-full bg-white py-6"
+      className="overflow-hidden w-full bg-transparent py-6"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

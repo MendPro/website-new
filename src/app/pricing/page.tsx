@@ -1,10 +1,11 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient, GradientBackground } from '@/components/gradient'
+import { Gradient, Gradient_Footer, GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { LogoCloud } from '@/components/logo-cloud'
 import { Navbar } from '@/components/navbar'
+import PricingCard from '@/components/pricingcard'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
@@ -13,6 +14,11 @@ import {
   MinusIcon,
 } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
+
+import dynamic from 'next/dynamic';
+
+const ImageCarousel = dynamic(() => import('@/components/slidingsocial'), { ssr: false });
+
 
 export const metadata: Metadata = {
   title: 'Pricing',
@@ -122,53 +128,53 @@ function Header() {
 function PricingCards() {
   return (
     <div className="relative py-24">
-      <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <Gradient_Footer className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {tiers.map((tier, tierIndex) => (
-            <PricingCard key={tierIndex} tier={tier} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {tiers.map((tier, index) => (
+            <PricingCard key={index} tier={tier} />
           ))}
         </div>
-        <LogoCloud className="mt-24" />
+        <ImageCarousel />
       </Container>
     </div>
   )
 }
 
-function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
-  return (
-    <div className="-m-2 grid grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-      <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
-        <div className="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-          <Subheading>{tier.name}</Subheading>
-          <p className="mt-2 text-sm/6 text-gray-950/75">{tier.description}</p>
-          <div className="mt-8 flex items-center gap-4">
-            <div className="text-5xl font-medium text-gray-950">
-              ${tier.priceMonthly}
-            </div>
-            <div className="text-sm/5 text-gray-950/75">
-              <p>USD</p>
-              <p>per month</p>
-            </div>
-          </div>
-          <div className="mt-8">
-            <Button href={tier.href}>Start a free trial</Button>
-          </div>
-          <div className="mt-8">
-            <h3 className="text-sm/6 font-medium text-gray-950">
-              Start selling with:
-            </h3>
-            <ul className="mt-3 space-y-3">
-              {tier.highlights.map((props, featureIndex) => (
-                <FeatureItem key={featureIndex} {...props} />
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+// function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
+//   return (
+//     <div className="-m-2 grid grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+//       <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
+//         <div className="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
+//           <Subheading>{tier.name}</Subheading>
+//           <p className="mt-2 text-sm/6 text-gray-950/75">{tier.description}</p>
+//           <div className="mt-8 flex items-center gap-4">
+//             <div className="text-5xl font-medium text-gray-950">
+//               ${tier.priceMonthly}
+//             </div>
+//             <div className="text-sm/5 text-gray-950/75">
+//               <p>USD</p>
+//               <p>per month</p>
+//             </div>
+//           </div>
+//           <div className="mt-8">
+//             <Button href={tier.href}>Start a free trial</Button>
+//           </div>
+//           <div className="mt-8">
+//             <h3 className="text-sm/6 font-medium text-gray-950">
+//               Start selling with:
+//             </h3>
+//             <ul className="mt-3 space-y-3">
+//               {tier.highlights.map((props, featureIndex) => (
+//                 <FeatureItem key={featureIndex} {...props} />
+//               ))}
+//             </ul>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
 
 function PricingTable({
   selectedTier,

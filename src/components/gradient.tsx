@@ -35,7 +35,7 @@ export function GradientBackground() {
       <div
         className={clsx(
           'absolute -top-44 -right-60 h-60 w-xl transform-gpu md:right-0',
-          'bg-linear-115 from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff]',
+          'bg-linear-115 from-[#f3ff8d] from-28% via-[#7dd9c7] via-70% to-[#012b3a] sm:bg-linear-145',
           'rotate-[-10deg] rounded-full blur-3xl',
         )}
       />
