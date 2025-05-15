@@ -26,6 +26,7 @@ import type { Metadata } from 'next'
 
 import dynamic from 'next/dynamic';
 import FAQ from '@/components/faq'
+import Testimonial2 from '@/components/Testimonial2'
 
 const ImageCarousel = dynamic(() => import('@/components/slidingsocial'), { ssr: false });
 
@@ -95,14 +96,14 @@ function BentoSection() {
     <Container>
       <Subheading>Plan</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Beyond scheduling — your all-in-one content, conversations, accounts and customer management tool.
+        Avoid chaos, plan ahead.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Insight"
-          title="Get perfect clarity"
-          description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          eyebrow="Schedule"
+          title="Content on the go! "
+          description="Scheduling takes off the limits on when your creativity gets to shine. No matter the platform, we integrate seamlessly to ensure your creativity meets your audience when you want it to."
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
@@ -113,8 +114,9 @@ function BentoSection() {
 
 
           eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
+          title="Track Trends. Set Prices. Sell Smarter
+"
+          description="With built-in analytics and smart pricing tools that track customer behavior, product trends and insights across your social channels, you always know what's working and what to change"
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
@@ -122,9 +124,9 @@ function BentoSection() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+          eyebrow="Inventory"
+          title="No Surprises, Just Smart Inventory"
+          description="No overselling, no guess-work, no disappointing customers: just smart inventory so you always know what’s in stock, and what’s not."
           graphic={
             <div className="flex size-full pt-10 pl-10">
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
@@ -140,9 +142,9 @@ function BentoSection() {
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Limitless"
-          title="Sell globally"
-          description="Radiant helps you sell in locations currently under international embargo."
+          eyebrow="Whispers"
+          title="Suggestions at your fingertips"
+          description="Feeling stuck? We integrated our Social Business bot called NIA GPT to provide extra support for days when you need a creative boost or need to get deep competitor research done. "
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -157,15 +159,15 @@ function DarkBentoSection() {
       <Container>
         <Subheading dark>Post</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Customer outreach has never been easier.
+          Integrate all your social channels.
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
-            eyebrow="Networking"
-            title="Sell at the speed of light"
-            description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            eyebrow="Multi-Platform "
+            title="All in on app hosting"
+            description="Access all your social channels in one dashboard; from instagram to whatsapp, no tab switching, just one app to manage it all."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -174,18 +176,18 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Integrations"
-            title="Meet leads where they are"
-            description="With thousands of integrations, no one will be able to escape your cold outreach."
+            eyebrow="Templates"
+            title="Post Templates and Auto Captions"
+            description="With Ready to use and easy to use templates, content production time could be cut in half. Our added AI- generator that suggests captions and hashtags help save time and improve productivity."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Meetings"
-            title="Smart call scheduling"
-            description="Automatically insert intro calls into your leads' calendars without their consent."
+            eyebrow="Responder"
+            title="24/7 replies that sound just like you"
+            description="Never miss an opportunity in the DM’s or Comments, we've Integrated an automated AI responder that communicates in your brand voice even when you're offline."
             graphic={<LinkedAvatars />}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
@@ -210,14 +212,14 @@ function BentoSection_Close() {
     <Container>
       <Subheading>Close</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Beyond scheduling — your all-in-one content, conversations, accounts and customer management tool.
+        Sale. Sell. Sold
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Insight"
-          title="Get perfect clarity"
-          description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          eyebrow="Invoicing"
+          title="Professional payment requests"
+          description="Request payments with ease, generate and send professional invoices in seconds, keep track, no spreadsheets needed. "
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
@@ -227,9 +229,9 @@ function BentoSection_Close() {
         <BentoCard
 
 
-          eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
+          eyebrow="CRM"
+          title="Every DM automatically becomes a customer profile"
+          description="MendPro captures key details from your DMs and turns them into organized customer records in real time. No more scrolling through chats,  just smart, instant CRM that grows with your business."
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
@@ -237,9 +239,9 @@ function BentoSection_Close() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+          eyebrow="Tracking"
+          title="Know the status of every order"
+          description="Nothing slips through the cracks, your customers stay updated and you stay in control from close of sale to delivery."
           graphic={
             <div className="flex size-full pt-10 pl-10">
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
@@ -248,16 +250,19 @@ function BentoSection_Close() {
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Source"
-          title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
+          eyebrow="Bookkeeping"
+          title="Smart records, zero guesswork"
+          description="Track sales, expenses, and profits in real time, no spreadsheets or calculators required.
+          Stay organized with clean, automatic records that make running your business easier."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Limitless"
-          title="Sell globally"
-          description="Radiant helps you sell in locations currently under international embargo."
+          eyebrow="Remarketing"
+          title="Re-engage with your audience strategically"
+          description="Set smart triggers that automatically follow up with leads who didn’t convert the first time.
+Whether it’s a DM nudge or email reminder, bring back interested customers without lifting a finger.
+"
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -272,15 +277,16 @@ function DarkBentoSection_Repeat() {
       <Container>
         <Subheading dark>Repeat</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Customer outreach has never been easier.
+          Keep customers coming back
+
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
-            eyebrow="Networking"
-            title="Sell at the speed of light"
-            description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            eyebrow="History"
+            title="Customer History & Insights"
+            description="Get the full picture at a glance. See who bought what, when, and how often so you can personalize every message, promo, and offer to the right people at the right time."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -289,26 +295,27 @@ function DarkBentoSection_Repeat() {
           />
           <BentoCard
             dark
-            eyebrow="Integrations"
-            title="Meet leads where they are"
-            description="With thousands of integrations, no one will be able to escape your cold outreach."
+            eyebrow="Messaging"
+            title="Automated Messaging that feels human
+"
+            description="Set up custom replies, autoresponders, and follow-ups that sound just like you. Always stay responsive, even when you're off the clock."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Meetings"
-            title="Smart call scheduling"
-            description="Automatically insert intro calls into your leads' calendars without their consent."
+            eyebrow="Reports"
+            title="Know what’s working, fix what’s not"
+            description="Track your content performance, sales, and customer engagement all in one dashboard. Make smarter decisions with real insights, not guesswork."
             graphic={<LinkedAvatars />}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Engagement"
-            title="Become a thought leader"
-            description="RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader."
+            eyebrow="Segmentation"
+            title="Organized contacts, targeted growth"
+            description="Group your audience by behavior, purchase history, or interest. Send the right message to the right people and watch your engagement soar."
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -343,7 +350,9 @@ export default function Home() {
         </div>
 
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <Testimonial2 />
+
       <FAQ />
       <Footer />
 
