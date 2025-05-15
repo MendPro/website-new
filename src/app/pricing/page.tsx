@@ -1,5 +1,6 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
+import FAQ from '@/components/faq'
 import { Footer } from '@/components/footer'
 import { Gradient, Gradient_Footer, GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
@@ -515,7 +516,8 @@ export default function Pricing({
       <PricingCards />
       <PricingTable selectedTier={tier} />
       <Testimonial />
-      <FrequentlyAskedQuestions />
+      {/* <FrequentlyAskedQuestions /> */}
+      <FAQ />
       <Footer />
     </main>
   )
