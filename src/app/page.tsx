@@ -78,12 +78,12 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          AI-powered with built-in business logic
+         All-in-one <span className='' > content </span>, <span> conversations </span> , <span> account  </span> and customer managements.
         </Heading>
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/panel-screenshot.png"
+          src="/screenshots/mendpro.png"
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
         />
       </Container>
