@@ -78,13 +78,13 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-         All-in-one <span className='' > content </span>, <span> conversations </span> , <span> accounts  </span> and customer management.
+         All-in-one <span className='' > content </span>, <span> conversations </span> , <span>   </span> and customer management.
         </Heading>
         <Screenshot
           width={1216}
           height={768}
           src="/screenshots/mp2.png"
-          className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+          className="mt-16 h-[16rem]  md-[36rem] md:h-auto w-[34rem] md:w-[76rem]"
         />
       </Container>
     </div>
