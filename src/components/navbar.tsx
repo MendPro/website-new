@@ -91,7 +91,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
                 <div className='flex '>
                   <Image src={logo} alt=''  className='w-9 mr-4'/>
                   {/* <Image src={mend} alt='' className='w-42' /> */}
-                  <Image src={mt} alt='' className='w-22' />
+                  <Image src={mt} alt='' className='w-18' />
                 </div>
                 {/* <p className="text-lg text-primary-400 dark:text-alt-200 font-bold">
                   MendPro
