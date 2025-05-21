@@ -5,6 +5,7 @@ import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
+import { MdChevronRight } from "react-icons/md";
 import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
@@ -61,7 +62,8 @@ function Hero() {
             For social managers who sell and the businesses that trust them to.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Try Free  &mdash;  No card needed</Button>
+            {/* <Button href="#">Try Free  &mdash;  No card needed</Button> */}
+            <Button href="#">Book Demo</Button>
             <Button variant="secondary" href="/pricing">
               See Pricing
             </Button>
@@ -77,14 +79,13 @@ function FeatureSection() {
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
-        <Heading as="h2" className="max-w-3xl">
-         All-in-one <span className='' > content </span>, <span> conversations </span> , <span>   </span> and customer management.
-        </Heading>
+        <Heading as="h2" className=" max-w-3xl">
+          Content. Conversations. Conversions &rarr; all in one place </Heading>
         <Screenshot
           width={1216}
           height={768}
           src="/screenshots/mp2.png"
-          className="mt-16 h-[16rem]  md-[36rem] md:h-auto w-[34rem] md:w-[76rem]"
+          className="mt-16 h-[20rem]  md-[36rem] md:h-auto w-full md:w-[82rem]"
         />
       </Container>
     </div>
@@ -96,16 +97,16 @@ function BentoSection() {
     <Container>
       <Subheading>Plan</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Avoid chaos, plan ahead.
+        Organize, analyze and prepare
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Schedule"
-          title="Content on the go! "
-          description="Scheduling takes off the limits on when your creativity gets to shine. No matter the platform, we integrate seamlessly to ensure your creativity meets your audience when you want it to."
+          title="Streamlined content scheduling. "
+          description="Plan and publish content across 12 platforms from one centralized dashboard"
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-full w-full bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -114,38 +115,47 @@ function BentoSection() {
 
 
           eyebrow="Analysis"
-          title="Track Trends. Set Prices. Sell Smarter
+          title="Performance that informs strategy.
 "
-          description="With built-in analytics and smart pricing tools that track customer behavior, product trends and insights across your social channels, you always know what's working and what to change"
+          description="Monitor post engagement, trends, and audience behavior to understand what’s working and what’s not."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="h-full w-full bg-[url(/screenshots/analysis.jpg)] bg-cover bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
           eyebrow="Inventory"
-          title="No Surprises, Just Smart Inventory"
-          description="No overselling, no guess-work, no disappointing customers: just smart inventory so you always know what’s in stock, and what’s not."
+          title="Sync content with commerce"
+          description="Link your product catalog so your content reflects what’s in stock, what’s selling, and what needs a spotlight."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            // <div className="flex size-full pt-10 pl-10">
+
+            //   <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
+            // </div>
+
+            <div className="h-full w-full bg-[url(/screenshots/inventory.jpg)] bg-cover bg-center bg-no-repeat" />
+
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Source"
-          title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
-          graphic={<LogoCluster />}
+          eyebrow="Ads (Coming Soon)"
+          title="Campaigns, built right in."
+          description="Create, manage, and track Facebook ad campaigns directly from the app."
+          graphic={
+            <div className="h-full w-full bg-[url(/screenshots/ads.jpg)] bg-cover bg-center bg-no-repeat" />
+
+          }
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Whispers"
-          title="Suggestions at your fingertips"
-          description="Feeling stuck? We integrated our Social Business bot called NIA GPT to provide extra support for days when you need a creative boost or need to get deep competitor research done. "
-          graphic={<Map />}
+          eyebrow="Insights"
+          title="Intelligent recommendations."
+          description="Receive weekly suggestions from Nia, your AI assistant, on what to post, when to post, and how to optimize for impact. "
+          graphic={
+            <div className="h-full w-full bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat" />  
+          }
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
@@ -159,45 +169,49 @@ function DarkBentoSection() {
       <Container>
         <Subheading dark>Post</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Integrate all your social channels.
-        </Heading>
+          Show up, everywhere.        </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
             eyebrow="Multi-Platform "
-            title="All in on app hosting"
-            description="Access all your social channels in one dashboard; from instagram to whatsapp, no tab switching, just one app to manage it all."
+            title="Publish to 12 platforms."
+            description="Share content across Instagram, Facebook, TikTok, X, LinkedIn, and more — all from one place."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-full w-full bg-[url(/screenshots/multi.jpg)] bg-cover bg-center bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Templates"
-            title="Post Templates and Auto Captions"
-            description="With Ready to use and easy to use templates, content production time could be cut in half. Our added AI- generator that suggests captions and hashtags help save time and improve productivity."
-            graphic={<LogoTimeline />}
+            eyebrow="Post generator"
+            title="AI-written posts, ready to go."
+            description="Get fresh, engaging post ideas and captions written for you — no brainstorming needed"
+            graphic={
+              <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover bg-center bg-no-repeat" />
+
+            }
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Responder"
-            title="24/7 replies that sound just like you"
-            description="Never miss an opportunity in the DM’s or Comments, we've Integrated an automated AI responder that communicates in your brand voice even when you're offline."
-            graphic={<LinkedAvatars />}
+            eyebrow="Auto-Responder"
+            title="Reply while you sleep."
+            description="Automated replies that keep conversations going even when offline or busy."
+            graphic={
+              <div className="h-full w-full bg-[url(/screenshots/auto.jpg)] bg-cover bg-center bg-no-repeat" />
+            }
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Engagement"
-            title="Become a thought leader"
-            description="RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader."
+            eyebrow="Suggestions"
+            title="Smart captions and hashtags."
+            description="Hashtags and post timing recommendations based on what’s trending and what’s worked before."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-full w-full bg-[url(/screenshots/suggest.jpg)] bg-cover bg-center bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
@@ -212,16 +226,16 @@ function BentoSection_Close() {
     <Container>
       <Subheading>Close</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Sale. Sell. Sold
+        Turn conversations into customers.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Invoicing"
-          title="Professional payment requests"
-          description="Request payments with ease, generate and send professional invoices in seconds, keep track, no spreadsheets needed. "
+          eyebrow="Auto-Capture"
+          title="Collect order details from chat."
+          description="Automatically extract names, numbers, products, and delivery info from conversations — no need for a separate form. "
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-full w-full bg-[url(/screenshots/capture.jpg)] bg-cover bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -229,39 +243,36 @@ function BentoSection_Close() {
         <BentoCard
 
 
-          eyebrow="CRM"
-          title="Every DM automatically becomes a customer profile"
-          description="MendPro captures key details from your DMs and turns them into organized customer records in real time. No more scrolling through chats,  just smart, instant CRM that grows with your business."
+          eyebrow="DM → CRM"
+          title="Every message becomes a profile."
+          description="Turn customer chats into structured contact records, complete with purchase history and engagement logs."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="h-full w-full bg-[url(/screenshots/dr.jpg)] bg-cover bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Tracking"
-          title="Know the status of every order"
-          description="Nothing slips through the cracks, your customers stay updated and you stay in control from close of sale to delivery."
+          eyebrow="Fulfillment"
+          title="Ship orders without the hassle."
+          description="Integrate with third-party providers to fulfill and track orders without leaving your dashboard."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <div className="h-full w-full bg-[url(/screenshots/fillfull.jpg)] bg-cover bg-center bg-no-repeat" />
+
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Bookkeeping"
-          title="Smart records, zero guesswork"
-          description="Track sales, expenses, and profits in real time, no spreadsheets or calculators required.
-          Stay organized with clean, automatic records that make running your business easier."
+          eyebrow="Simple Bookkeeping"
+          title="Stay on top of your numbers."
+          description="Sales are automatically logged so you can track revenue and expenses without spreadsheets."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Remarketing"
-          title="Re-engage with your audience strategically"
-          description="Set smart triggers that automatically follow up with leads who didn’t convert the first time.
-Whether it’s a DM nudge or email reminder, bring back interested customers without lifting a finger.
+          eyebrow="Remarketing Triggers"
+          title="Follow up without the guesswork."
+          description="Set triggers based on behavior or timing to re-engage buyers and turn one-time orders into repeat business.
 "
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
@@ -271,62 +282,62 @@ Whether it’s a DM nudge or email reminder, bring back interested customers wit
   )
 }
 
-function DarkBentoSection_Repeat() {
-  return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
-      <Container>
-        <Subheading dark>Repeat</Subheading>
-        <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Keep customers coming back
+// function DarkBentoSection_Repeat() {
+//   return (
+//     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
+//       <Container>
+//         <Subheading dark>Repeat</Subheading>
+//         <Heading as="h3" dark className="mt-2 max-w-3xl">
+//           Keep customers coming back
 
-        </Heading>
+//         </Heading>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <BentoCard
-            dark
-            eyebrow="History"
-            title="Customer History & Insights"
-            description="Get the full picture at a glance. See who bought what, when, and how often so you can personalize every message, promo, and offer to the right people at the right time."
-            graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
-            }
-            fade={['top']}
-            className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Messaging"
-            title="Automated Messaging that feels human
-"
-            description="Set up custom replies, autoresponders, and follow-ups that sound just like you. Always stay responsive, even when you're off the clock."
-            graphic={<LogoTimeline />}
-            // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
-            className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Reports"
-            title="Know what’s working, fix what’s not"
-            description="Track your content performance, sales, and customer engagement all in one dashboard. Make smarter decisions with real insights, not guesswork."
-            graphic={<LinkedAvatars />}
-            className="lg:col-span-2 lg:rounded-bl-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Segmentation"
-            title="Organized contacts, targeted growth"
-            description="Group your audience by behavior, purchase history, or interest. Send the right message to the right people and watch your engagement soar."
-            graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
-            }
-            fade={['top']}
-            className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
-          />
-        </div>
-      </Container>
-    </div>
-  )
-}
+//         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+//           <BentoCard
+//             dark
+//             eyebrow="History"
+//             title="Customer History & Insights"
+//             description="Get the full picture at a glance. See who bought what, when, and how often so you can personalize every message, promo, and offer to the right people at the right time."
+//             graphic={
+//               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+//             }
+//             fade={['top']}
+//             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
+//           />
+//           <BentoCard
+//             dark
+//             eyebrow="Messaging"
+//             title="Automated Messaging that feels human
+// "
+//             description="Set up custom replies, autoresponders, and follow-ups that sound just like you. Always stay responsive, even when you're off the clock."
+//             graphic={<LogoTimeline />}
+//             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
+//             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
+//           />
+//           <BentoCard
+//             dark
+//             eyebrow="Reports"
+//             title="Know what’s working, fix what’s not"
+//             description="Track your content performance, sales, and customer engagement all in one dashboard. Make smarter decisions with real insights, not guesswork."
+//             graphic={<LinkedAvatars />}
+//             className="lg:col-span-2 lg:rounded-bl-4xl"
+//           />
+//           <BentoCard
+//             dark
+//             eyebrow="Segmentation"
+//             title="Organized contacts, targeted growth"
+//             description="Group your audience by behavior, purchase history, or interest. Send the right message to the right people and watch your engagement soar."
+//             graphic={
+//               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
+//             }
+//             fade={['top']}
+//             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
+//           />
+//         </div>
+//       </Container>
+//     </div>
+//   )
+// }
 
 export default function Home() {
   return (
@@ -346,7 +357,6 @@ export default function Home() {
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
 
           <BentoSection_Close />
-          <DarkBentoSection_Repeat />
         </div>
 
       </main>
