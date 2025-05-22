@@ -165,13 +165,13 @@ function BentoSection() {
 
 function DarkBentoSection() {
   return (
-    <div className="mx- mt- rounded-4xl bg-linear-115  via-[#7dd9c7] via-50% to-[#012b3a] sm:bg-linear-145 py-32">
+    <div className="mx- mt- rounded-4xl bg-gray-900 sm:bg-linear-145 py-32">
       <Container>
         <Subheading dark>Post</Subheading>
-        <Heading as="h3" dark className="mt-2 text-black max-w-3xl">
+        <Heading as="h3" dark className="mt-2 text- max-w-3xl">
           Show up, everywhere        </Heading>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-10 grid  grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
             eyebrow="Multi-Platform "

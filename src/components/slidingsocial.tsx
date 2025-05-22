@@ -31,12 +31,12 @@ export default function ContinuousScroll() {
         {[...images, ...images].map((src, index) => (
           <div
             key={index}
-            className="mx-3 w-24 h-10 lg:w-42 px-2 flex items-center justify-center  border-gray-200 rounded-lg bg-white -sm"
+            className="mx-3 w-24 h-10 lg:w-42 px-2 lg:py-8 flex items-center justify-center shadow-md border border-gray-300  rounded-lg bg-white -sm"
           >
             <img
               src={src}
               alt={`Logo ${index}`}
-              className="max-h-10 object-contain filter grayscale contrast-200"
+              className="max-h-10 object-contain filter   grayscale contrast-200"
             />
           </div>
         ))}

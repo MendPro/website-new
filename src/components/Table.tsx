@@ -35,7 +35,7 @@ const renderValue = (val: FeatureValue): JSX.Element => {
 
 export default function Table(): JSX.Element {
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-60">
       <h2 className="text-2xl font-extrabold text-gray-900 text-center mb-8">
         Why settle for social tools when you can run your whole business?
       </h2>
