@@ -40,17 +40,17 @@ export function BentoCard({
           <div className="absolute inset-0 bg-linear-to-b from-white to-50% group-data-dark:from-gray-800 group-data-dark:from-[-25%]" />
         )}
         {fade.includes('bottom') && (
-          <div className="absolute inset-0 bg-linear-to-t from-white to-50% group-data-dark:from-white group-data-darkto-50%" />
+          <div className="absolute inset-0 bg-linear-to-t from-white to-50% %" />
         )}
       </div>
       <div className="relative         p-10">
         <Subheading as="h3" dark={dark}>
           {eyebrow}
         </Subheading>
-        <p className="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-dark:text-black">
+        <p className="mt-1 text-2xl/8  font-medium tracking-tight text-gray-950 group-data-dark:text-black">
           {title}
         </p>
-        <p className="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-dark:text-gray-400">
+        <p className="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-dark:text-gray-600">
           {description}
         </p>
       </div>
