@@ -28,6 +28,7 @@ import type { Metadata } from 'next'
 import dynamic from 'next/dynamic';
 import FAQ from '@/components/faq'
 import Testimonial2 from '@/components/Testimonial2'
+import Table from '@/components/Table'
 
 const ImageCarousel = dynamic(() => import('@/components/slidingsocial'), { ssr: false });
 
@@ -84,7 +85,7 @@ function FeatureSection() {
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/mp2.png"
+          src="/screenshots/mp3.png"
           className="mt-16 h-[20rem]  md-[36rem] md:h-auto w-full md:w-[82rem]"
         />
       </Container>
@@ -103,7 +104,7 @@ function BentoSection() {
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Schedule"
-          title="Streamlined content scheduling. "
+          title="Streamlined content scheduling"
           description="Plan and publish content across 12 platforms from one centralized dashboard"
           graphic={
             <div className="h-full w-full bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -115,8 +116,7 @@ function BentoSection() {
 
 
           eyebrow="Analysis"
-          title="Performance that informs strategy.
-"
+          title="Performance that informs strategy"
           description="Monitor post engagement, trends, and audience behavior to understand what’s working and what’s not."
           graphic={
             <div className="h-full w-full bg-[url(/screenshots/analysis.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -141,7 +141,7 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Ads (Coming Soon)"
-          title="Campaigns, built right in."
+          title="Campaigns, built right in"
           description="Create, manage, and track Facebook ad campaigns directly from the app."
           graphic={
             <div className="h-full w-full bg-[url(/screenshots/ads.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -151,7 +151,7 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Insights"
-          title="Intelligent recommendations."
+          title="Intelligent recommendations"
           description="Receive weekly suggestions from Nia, your AI assistant, on what to post, when to post, and how to optimize for impact. "
           graphic={
             <div className="h-full w-full bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat" />  
@@ -165,17 +165,17 @@ function BentoSection() {
 
 function DarkBentoSection() {
   return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
+    <div className="mx- mt- rounded-4xl bg-linear-115  via-[#7dd9c7] via-50% to-[#012b3a] sm:bg-linear-145 py-32">
       <Container>
         <Subheading dark>Post</Subheading>
-        <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Show up, everywhere.        </Heading>
+        <Heading as="h3" dark className="mt-2 text-black max-w-3xl">
+          Show up, everywhere        </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
             eyebrow="Multi-Platform "
-            title="Publish to 12 platforms."
+            title="Publish to 12 platforms"
             description="Share content across Instagram, Facebook, TikTok, X, LinkedIn, and more — all from one place."
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/multi.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -186,7 +186,7 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Post generator"
-            title="AI-written posts, ready to go."
+            title="AI-written, ready to go"
             description="Get fresh, engaging post ideas and captions written for you — no brainstorming needed"
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -198,7 +198,7 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Auto-Responder"
-            title="Reply while you sleep."
+            title="Reply while you sleep"
             description="Automated replies that keep conversations going even when offline or busy."
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/auto.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -208,7 +208,7 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Suggestions"
-            title="Smart captions and hashtags."
+            title="Smart captions and hashtags"
             description="Hashtags and post timing recommendations based on what’s trending and what’s worked before."
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/suggest.jpg)] bg-cover bg-center bg-no-repeat" />
@@ -266,7 +266,9 @@ function BentoSection_Close() {
           eyebrow="Simple Bookkeeping"
           title="Stay on top of your numbers."
           description="Sales are automatically logged so you can track revenue and expenses without spreadsheets."
-          graphic={<LogoCluster />}
+          graphic={
+            <div className="h-full w-full bg-[url(/screenshots/booking.jpg)] bg-cover bg-center bg-no-repeat" />
+          }
           className="lg:col-span-2"
         />
         <BentoCard
@@ -274,7 +276,9 @@ function BentoSection_Close() {
           title="Follow up without the guesswork."
           description="Set triggers based on behavior or timing to re-engage buyers and turn one-time orders into repeat business.
 "
-          graphic={<Map />}
+          graphic={
+            <div className="h-full w-full bg-[url(/screenshots/trigger.jpg)] bg-cover bg-center bg-no-repeat" />
+          }
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
@@ -362,6 +366,7 @@ export default function Home() {
       </main>
       {/* <Testimonials /> */}
       <Testimonial2 />
+      <Table />
 
       <FAQ />
       <Footer />

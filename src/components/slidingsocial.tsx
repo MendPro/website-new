@@ -31,7 +31,7 @@ export default function ContinuousScroll() {
         {[...images, ...images].map((src, index) => (
           <div
             key={index}
-            className="mx-3 w-24 h-10 px-2 flex items-center justify-center border border-gray-200 rounded-lg bg-white shadow-sm"
+            className="mx-3 w-24 h-10 lg:w-42 px-2 flex items-center justify-center  border-gray-200 rounded-lg bg-white -sm"
           >
             <img
               src={src}
