@@ -101,13 +101,13 @@ function BentoSection() {
         Organize, analyze and prepare
       </Heading>
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16  lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Schedule"
           title="Streamlined content scheduling"
           description="Plan and publish content across 12 platforms from one centralized dashboard"
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -137,6 +137,8 @@ function BentoSection() {
             <div className="h-full w-full bg-[url(/screenshots/inventory.jpg)] bg-cover bg-center bg-no-repeat" />
 
           }
+          fade={['bottom']}
+
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
@@ -147,15 +149,18 @@ function BentoSection() {
             <div className="h-full w-full bg-[url(/screenshots/ads.jpg)] bg-cover bg-center bg-no-repeat" />
 
           }
+          fade={['bottom']}
+
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Insights"
           title="Intelligent recommendations"
           description="Receive weekly suggestions from Nia, your AI assistant, on what to post, when to post, and how to optimize for impact. "
-          graphic={
-            <div className="h-full w-full bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat" />  
+          graphic={<div className="h-80 bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat bg-no-repeat" />
           }
+          fade={['bottom']}
+
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
@@ -165,11 +170,12 @@ function BentoSection() {
 
 function DarkBentoSection() {
   return (
-    <div className="mx- mt- rounded-4xl bg-gray-900 sm:bg-linear-145 py-32">
+    <div className="mx- mt- rounded-4xl   sm:bg-linear-145 py-32">
       <Container>
         <Subheading dark>Post</Subheading>
-        <Heading as="h3" dark className="mt-2 text- max-w-3xl">
-          Show up, everywhere        </Heading>
+        <Heading as="h3" dark className="mt-2 text-black max-w-3xl">
+          Show up, everywhere
+        </Heading>
 
         <div className="mt-10 grid  grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
@@ -180,7 +186,7 @@ function DarkBentoSection() {
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/multi.jpg)] bg-cover bg-center bg-no-repeat" />
             }
-            fade={['top']}
+            fade={['bottom']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
           />
           <BentoCard
@@ -189,9 +195,10 @@ function DarkBentoSection() {
             title="AI-written, ready to go"
             description="Get fresh, engaging post ideas and captions written for you — no brainstorming needed"
             graphic={
-              <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover bg-center bg-no-repeat" />
+              <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover  object-contain bg-no-repeat" />
 
             }
+            fade={['bottom']}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
@@ -203,6 +210,7 @@ function DarkBentoSection() {
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/auto.jpg)] bg-cover bg-center bg-no-repeat" />
             }
+            fade={['bottom']}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
@@ -213,7 +221,7 @@ function DarkBentoSection() {
             graphic={
               <div className="h-full w-full bg-[url(/screenshots/suggest.jpg)] bg-cover bg-center bg-no-repeat" />
             }
-            fade={['top']}
+            fade={['bottom']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
           />
         </div>

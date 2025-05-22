@@ -37,7 +37,7 @@ export default function Table(): JSX.Element {
   return (
     <div className="bg-white py-12 px-4 sm:px-6 lg:px-60">
       <h2 className="text-2xl font-extrabold text-gray-900 text-center mb-8">
-        Why settle for social tools when you can run your whole business?
+        Why settle for social only when you can run your whole business?
       </h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-200 rounded-md text-sm text-left text-gray-700">

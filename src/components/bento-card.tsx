@@ -30,20 +30,20 @@ export function BentoCard({
       className={clsx(
         className,
         'group relative flex flex-col overflow-hidden rounded-lg',
-        'bg-white shadow-xs ring-1 ring-black/5',
-        'data-dark:bg-gray-800 data-dark:ring-white/15',
+        'bg-white shadow-xs ring-1 ring-black/5 ' ,
+        'data-dark:bg-gray-800 data-dark:bg-linear-115 data-dark:from-[#f3ff8d] data-dark:from-28% via-[#7dd9c7] via-70% data-dark:to-[#012b3a] data-dark:sm:bg-linear-145 data-dark:ring-white/15 ',
       )}
     >
-      <div className="relative h-80 w-full shrink-0">
+      <div className="relative h-80  shrink-0">
         {graphic}
-        {/* {fade.includes('top') && (
-          // <div className="absolute inset-0 bg-linear-to-b from-black to-50% group-data-dark:from-gray-800 group-data-dark:from-[-25%]" />
+        {fade.includes('top') && (
+          <div className="absolute inset-0 bg-linear-to-b from-white to-50% group-data-dark:from-gray-800 group-data-dark:from-[-25%]" />
         )}
         {fade.includes('bottom') && (
-          // <div className="absolute inset-0 bg-linear-to-t from-black to-50% group-data-dark:from-gray-800 group-data-dark:from-[-25%]" />
-        )} */}
+          <div className="absolute inset-0 bg-linear-to-t from-white to-50% group-data-dark:from-white group-data-darkto-50%" />
+        )}
       </div>
-      <div className="relative p-10">
+      <div className="relative         p-10">
         <Subheading as="h3" dark={dark}>
           {eyebrow}
         </Subheading>

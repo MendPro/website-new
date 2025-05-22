@@ -88,10 +88,10 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
                 {/* <Logo className="h-9" /> */}
-                <div className='flex '>
+                <div className='flex item-end justify-end '>
                   <Image src={logo} alt=''  className='w-9 mr-4'/>
                   {/* <Image src={mend} alt='' className='w-42' /> */}
-                  <Image src={mt} alt='' className='w-18' />
+                  <Image src={mt} alt='' className='w-18 self-end' />
                 </div>
                 {/* <p className="text-lg text-primary-400 dark:text-alt-200 font-bold">
                   MendPro

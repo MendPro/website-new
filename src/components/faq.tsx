@@ -24,7 +24,7 @@ const faqData = [
       "Yes. You can manage Instagram, WhatsApp, Facebook, TikTok, LinkedIn, Google Business, X (Twitter), and more in one unified dashboard.",
   },
   {
-    question: "How does the AI assistant (NIA GPT) help me?",
+    question: "How does the AI assistant (nia Ai) help me?",
     answer:
       "NIA GPT is your smart business sidekick. It helps generate captions and hashtags, conduct competitor research, track trends, respond to messages, and offer tailored content suggestions.",
   },
