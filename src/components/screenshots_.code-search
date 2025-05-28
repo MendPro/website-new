@@ -1,0 +1,73 @@
+# Query: screenshots/
+# ContextLines: 1
+
+35 results - 1 file
+
+src/app/page.tsx:
+   87            height={768}
+   88:           src="/screenshots/mp3.png"
+   89            className="mt-16 h-[20rem]  md-[36rem] md:h-auto w-full md:w-[82rem]"
+
+  109            graphic={
+  110:             <div className="h-80 bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat" />
+  111            }
+
+  121            graphic={
+  122:             <div className="h-full w-full bg-[url(/screenshots/analytics.jpg)] bg-cover bg-center bg-no-repeat" />
+  123            }
+
+  136  
+  137:             <div className="h-full w-full bg-[url(/screenshots/inventory.jpg)] bg-cover bg-center bg-no-repeat" />
+  138  
+
+  148            graphic={
+  149:             <div className="h-full w-full bg-[url(/screenshots/ads.jpg)] bg-cover bg-center bg-no-repeat" />
+  150  
+
+  159            description="Receive weekly suggestions from Nia, your AI assistant, on what to post, when to post, and how to optimize for impact. "
+  160:           graphic={<div className="h-80 bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat" />
+  161            }
+
+  186              graphic={
+  187:               <div className="h-full w-full bg-[url(/screenshots/multiplatform.jpg)] bg-cover bg-center bg-no-repeat" />
+  188              }
+
+  197              graphic={
+  198:               <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover  object-contain bg-no-repeat" />
+  199  
+
+  210              graphic={
+  211:               <div className="h-full w-full bg-[url(/screenshots/autoresponse.jpg)] bg-cover bg-center bg-no-repeat" />
+  212              }
+
+  221              graphic={
+  222:               <div className="h-full w-full bg-[url(/screenshots/suggestions.jpg)] bg-cover bg-center bg-no-repeat" />
+  223              }
+
+  245            graphic={
+  246:             <div className="h-full w-full bg-[url(/screenshots/auto-capture.png)] bg-cover bg-center bg-no-repeat" />
+  247            }
+
+  257            graphic={
+  258:             <div className="h-full w-full bg-[url(/screenshots/dm.png)] bg-cover bg-center bg-no-repeat" />
+  259            }
+
+  267            graphic={
+  268:             <div className="h-full w-full bg-[url(/screenshots/fulfillment.png] bg-cover bg-center bg-no-repeat" />
+  269  
+
+  277            graphic={
+  278:             <div className="h-full w-full bg-[url(/screenshots/booking.jpg)] bg-cover bg-center bg-no-repeat" />
+  279            }
+
+  287            graphic={
+  288:             <div className="h-full w-full bg-[url(/screenshots/trigger.jpg)] bg-cover bg-center bg-no-repeat" />
+  289            }
+
+  313  //             graphic={
+  314: //               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+  315  //             }
+
+  342  //             graphic={
+  343: //               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
+  344  //             }

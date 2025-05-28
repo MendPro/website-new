@@ -1,0 +1,24 @@
+# Query: schedule
+# ContextLines: 1
+
+6 results - 2 files
+
+package-lock.json:
+  14144          "loose-envify": "^1.1.0",
+  14145:         "scheduler": "^0.23.2"
+  14146        },
+
+  15411      },
+  15412:     "node_modules/scheduler": {
+  15413        "version": "0.23.2",
+  15414:       "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",
+  15415        "integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
+
+src/app/page.tsx:
+  105          <BentoCard
+  106:           eyebrow="Schedule"
+  107            title="Streamlined content scheduling"
+
+  109            graphic={
+  <div className="bento-glass bg-[url(/screenshots/schedule.jpg)]" />
+}

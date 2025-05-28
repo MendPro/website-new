@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+@import 'tailwindcss';
+
+.bento-glass {
+  @apply h-80 bg-cover bg-center bg-no-repeat bg-white/30 backdrop-blur-md rounded-xl;
+}
+@theme {
+  --font-sans: Switzer, system-ui, sans-serif;
+
+  --radius-4xl: 2rem;
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 10s linear infinite;
+}
+
+.pause-scroll {
+  animation-play-state: paused;
+}
+.bento-glass {
+  @apply h-80 bg-cover bg-center bg-no-repeat bg-white/30 backdrop-blur-md rounded-xl;
+}
