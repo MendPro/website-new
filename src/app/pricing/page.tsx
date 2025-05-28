@@ -29,17 +29,19 @@ export const metadata: Metadata = {
 
 const tiers = [
   {
-    name: 'Starter' as const,
-    slug: 'starter',
+    name: 'Social' as const,
+    slug: 'social',
     description: 'Everything you need to start selling.',
-    priceMonthly: 99,
+    priceMonthly: 25,
     href: '#',
     highlights: [
-      { description: 'Up to 3 team members' },
-      { description: 'Up to 5 deal progress boards' },
-      { description: 'Source leads from select platforms' },
-      { description: 'RadiantAI integrations', disabled: true },
-      { description: 'Competitor analysis', disabled: true },
+      { description: 'One business, 12 social media platforms ' },
+      { description: 'Schedule across 12 platform' },
+      { description: 'Receive DMs from Instagram, Facebook and X.' },
+      { description: 'AI content generation ', disabled: true },
+      { description: 'Inventory management', disabled: true },
+      { description: 'Facebook Ad manager', disabled: true },
+      { description: 'Nia AI assistant', disabled: true },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 3 },
@@ -57,17 +59,19 @@ const tiers = [
     ],
   },
   {
-    name: 'Growth' as const,
-    slug: 'growth',
+    name: 'Big Pro' as const,
+    slug: 'Big Pro',
     description: 'All the extras for your growing team.',
-    priceMonthly: 149,
+    priceMonthly: 32,
     href: '#',
     highlights: [
-      { description: 'Up to 10 team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 50 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: '5 competitor analyses per month' },
+      { description: 'Everything in social +' },
+      { description: 'Advanced business AI features' },
+      { description: 'Integrations (Shopify, logistics and more)' },
+      { description: 'Free onboarding call' },
+      { description: 'Access to advanced AI features' },
+      // { description: 'RadiantAI integrations' },
+      // { description: '5 competitor analyses per month' },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 10 },
@@ -85,17 +89,17 @@ const tiers = [
     ],
   },
   {
-    name: 'Enterprise' as const,
-    slug: 'enterprise',
+    name: 'Agency' as const,
+    slug: 'Agency',
     description: 'Added flexibility to close deals at scale.',
-    priceMonthly: 299,
+    priceMonthly: 95,
     href: '#',
     highlights: [
-      { description: 'Unlimited active team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 100 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: 'Unlimited competitor analyses' },
+      { description: 'Run up to 5 businesses (+₦30,000 per additional account)Run up to 5 businesses, 12 social accounts each (+₦30,000 per additional business)' },
+      { description: 'Everything in the Social' },
+      { description: 'Free onboarding call' },
+      // { description: 'RadiantAI integrations' },
+      { description: 'Priority access to beta features & partner perks' },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 'Unlimited' },
@@ -117,10 +121,9 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing that grows with your team size.</Heading>
+      <Heading as="h1">Pricing that grows with your needs.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Companies all over the world have closed millions of deals with Radiant.
-        Sign up today and start selling smarter.
+        Savvy professionals know that investing in superior tools delivers superior results.
       </Lead>
     </Container>
   )
@@ -135,6 +138,9 @@ function PricingCards() {
           {tiers.map((tier, index) => (
             <PricingCard key={index} tier={tier} />
           ))}
+        </div>
+        <div className='w-full justify-center my-12 flex items-center'>
+          <a href='https://calendly.com/chiomaannanna/1hr' className='p-4 cursor-pointer bg-linear-115  from-[#f3ff8d] via-70% to-[#012b3a] text-white'>Contact for Enterprice deal</a>
         </div>
         <ImageCarousel />
       </Container>
@@ -514,8 +520,9 @@ export default function Pricing({
       </Container>
       <Header />
       <PricingCards />
-      <PricingTable selectedTier={tier} />
-      <Testimonial />
+
+      {/* <PricingTable selectedTier={tier} /> */}
+      {/* <Testimonial /> */}
       {/* <FrequentlyAskedQuestions /> */}
       <FAQ />
       <Footer />

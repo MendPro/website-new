@@ -17,10 +17,13 @@ import mt from '../../public/mt.svg'
 
 const links = [
   { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
-  { href: '/blog', label: 'Blog' },
+  // { href: '/company', label: 'Company' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/login', label: 'Login' },
-]
+  // { href: '/signup', label: 'Sign up' },
+];
+
+
 
 function DesktopNav() {
   return (

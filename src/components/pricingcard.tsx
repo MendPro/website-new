@@ -23,7 +23,7 @@ interface PricingCardProps {
 
 const PricingCard: React.FC<PricingCardProps> = ({ tier }) => {
     const [currency, setCurrency] = useState<'USD' | 'NGN'>('USD');
-    const exchangeRate = 1000; // Example exchange rate
+    const exchangeRate = 1560; // Example exchange rate
 
     const displayPrice =
         currency === 'USD'
@@ -47,8 +47,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier }) => {
                     </div>
                     <CurrencyToggle currency={currency} setCurrency={setCurrency} />
                     <div className="mt-8">
-                        <a href={tier.href} className="inline-block px-6 py-2 bg-green-600 text-white rounded hover:bg-green-700">
-                            Start a free trial
+                        <a href={tier.href} className="inline-block px-6 py-2  bg-linear-115  from-[#f3ff8d] via-70% to-[#012b3a] text-white rounded hover:bg-green-700">
+                            Join Wait List
                         </a>
                     </div>
                     <div className="mt-8">

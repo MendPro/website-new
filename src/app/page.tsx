@@ -107,7 +107,7 @@ function BentoSection() {
           title="Streamlined content scheduling"
           description="Plan and publish content across 12 platforms from one centralized dashboard"
           graphic={
-            <div className="h-80 bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/schedule.jpg)] bg-cover bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -119,23 +119,17 @@ function BentoSection() {
           title="Performance that informs strategy"
           description="Monitor post engagement, trends, and audience behavior to understand what’s working and what’s not."
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/analysis.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className=" bg-[url(/screenshots/analytics.jpg)]" />
           }
           fade={['bottom']}
-          className="lg:col-span-3 lg:rounded-tr-4xl"
+          className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
           eyebrow="Inventory"
           title="Sync content with commerce"
           description="Link your product catalog so your content reflects what’s in stock, what’s selling, and what needs a spotlight."
           graphic={
-            // <div className="flex size-full pt-10 pl-10">
-
-            //   <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            // </div>
-
-            <div className="h-full w-full bg-[url(/screenshots/inventory.jpg)] bg-cover bg-center bg-no-repeat" />
-
+            <div className="bento-glass bg-[url(/screenshots/inventory.jpg)]" />
           }
           fade={['bottom']}
 
@@ -146,8 +140,7 @@ function BentoSection() {
           title="Campaigns, built right in"
           description="Create, manage, and track Facebook ad campaigns directly from the app."
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/ads.jpg)] bg-cover bg-center bg-no-repeat" />
-
+            <div className="bento-glass bg-[url(/screenshots/ads.jpg)]" />
           }
           fade={['bottom']}
 
@@ -157,7 +150,8 @@ function BentoSection() {
           eyebrow="Insights"
           title="Intelligent recommendations"
           description="Receive weekly suggestions from Nia, your AI assistant, on what to post, when to post, and how to optimize for impact. "
-          graphic={<div className="h-80 bg-[url(/screenshots/insight.jpg)] bg-cover bg-center bg-no-repeat bg-no-repeat" />
+          graphic={
+            <div className="bento-glass bg-[url(/screenshots/insight.jpg)]" />
           }
           fade={['bottom']}
 
@@ -184,7 +178,7 @@ function DarkBentoSection() {
             title="Publish to 12 platforms"
             description="Share content across Instagram, Facebook, TikTok, X, LinkedIn, and more — all from one place."
             graphic={
-              <div className="h-full w-full bg-[url(/screenshots/multi.jpg)] bg-cover bg-center bg-no-repeat" />
+              <div className="bento-glass bg-[url(/screenshots/multiple.jpg)]" />
             }
             fade={['bottom']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -195,20 +189,20 @@ function DarkBentoSection() {
             title="AI-written, ready to go"
             description="Get fresh, engaging post ideas and captions written for you — no brainstorming needed"
             graphic={
-              <div className="h-full w-full bg-[url(/screenshots/generate.jpg)] bg-cover  object-contain bg-no-repeat" />
-
+              <div className="bento-glass bg-[url(/screenshots/generate.jpg)]" />
             }
             fade={['bottom']}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
+
           <BentoCard
             dark
             eyebrow="Auto-Responder"
             title="Reply while you sleep"
             description="Automated replies that keep conversations going even when offline or busy."
             graphic={
-              <div className="h-full w-full bg-[url(/screenshots/auto.jpg)] bg-cover bg-center bg-no-repeat" />
+              <div className="bento-glass bg-[url(/screenshots/autoresponse.jpg)]" />
             }
             fade={['bottom']}
             className="lg:col-span-2 lg:rounded-bl-4xl"
@@ -219,7 +213,7 @@ function DarkBentoSection() {
             title="Smart captions and hashtags"
             description="Hashtags and post timing recommendations based on what’s trending and what’s worked before."
             graphic={
-              <div className="h-full w-full bg-[url(/screenshots/suggest.jpg)] bg-cover bg-center bg-no-repeat" />
+              <div className="bento-glass bg-[url(/screenshots/suggest.jpg)]" />
             }
             fade={['bottom']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
@@ -243,7 +237,7 @@ function BentoSection_Close() {
           title="Collect order details from chat."
           description="Automatically extract names, numbers, products, and delivery info from conversations — no need for a separate form. "
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/capture.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className="bento-glass bg-[url(/screenshots/autocapture.jpg)]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -255,7 +249,7 @@ function BentoSection_Close() {
           title="Every message becomes a profile."
           description="Turn customer chats into structured contact records, complete with purchase history and engagement logs."
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/dr.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className="bento-glass bg-[url(/screenshots/dm.jpg)]" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -265,9 +259,9 @@ function BentoSection_Close() {
           title="Ship orders without the hassle."
           description="Integrate with third-party providers to fulfill and track orders without leaving your dashboard."
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/fillfull.jpg)] bg-cover bg-center bg-no-repeat" />
-
+            <div className="bento-glass bg-[url(/screenshots/fulfill.jpg)]" />
           }
+          fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
@@ -275,8 +269,9 @@ function BentoSection_Close() {
           title="Stay on top of your numbers."
           description="Sales are automatically logged so you can track revenue and expenses without spreadsheets."
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/booking.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className="bento-glass bg-[url(/screenshots/booking.jpg)]" />
           }
+          fade={['bottom']}
           className="lg:col-span-2"
         />
         <BentoCard
@@ -285,8 +280,9 @@ function BentoSection_Close() {
           description="Set triggers based on behavior or timing to re-engage buyers and turn one-time orders into repeat business.
 "
           graphic={
-            <div className="h-full w-full bg-[url(/screenshots/trigger.jpg)] bg-cover bg-center bg-no-repeat" />
+            <div className="bento-glass bg-[url(/screenshots/trigger.jpg)]" />
           }
+          fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
@@ -373,7 +369,7 @@ export default function Home() {
 
       </main>
       {/* <Testimonials /> */}
-      <Testimonial2 />
+      {/* <Testimonial2 /> */}
       <Table />
 
       <FAQ />

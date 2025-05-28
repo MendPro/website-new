@@ -57,7 +57,7 @@ function Sitemap() {
         <SitemapLinks>
           <SitemapLink href="/pricing">Pricing</SitemapLink>
           <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          
         </SitemapLinks>
       </div>
       <div>
@@ -148,7 +148,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} OMZN Solutions
     </div>
   )
 }

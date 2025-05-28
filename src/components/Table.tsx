@@ -21,8 +21,7 @@ const features: Feature[] = [
   { label: 'Customer segmentation', mendpro: true, hootsuite: 'Social-only', zoho: 'Social-only', hubspot: true },
   { label: 'Works across all platforms', mendpro: true, hootsuite: true, zoho: 'Partial', hubspot: true },
   { label: 'Business-focused features', mendpro: 'All-in-one', hootsuite: 'Social-only', zoho: 'Social-only', hubspot: 'CRM/Sales' },
-  { label: 'Pricing', mendpro: 'Starts at $25/month', hootsuite: '$99+/month', zoho: '$15–$65/month', hubspot: '$20–$800/month' },
-];
+  ];
 
 const Check = () => <span className="text-green-500 font-bold">✔</span>;
 const Cross = () => <span className="text-red-500 font-bold">✘</span>;
@@ -37,7 +36,7 @@ export default function Table(): JSX.Element {
   return (
     <div className="bg-white py-12 px-4 sm:px-6 lg:px-60">
       <h2 className="text-2xl font-extrabold text-gray-900 text-center mb-8">
-        Why settle for social only when you can run your whole business?
+        Don’t settle for social <em>only.</em> Run the whole business
       </h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-200 rounded-md text-sm text-left text-gray-700">

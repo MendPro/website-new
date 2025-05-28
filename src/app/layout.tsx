@@ -26,6 +26,8 @@ export default function RootLayout({
           title="The Radiant Blog"
           href="/blog/feed.xml"
         />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+
       </head>
       <body className="text-gray-950 antialiased">{children}</body>
     </html>
