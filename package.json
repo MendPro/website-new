@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typegen": "sanity schema extract --path=src/sanity/extract.json && sanity typegen generate && rm ./src/sanity/extract.json"
+    "typegen": " schema extract --path=src//extract.json && sanity typegen generate && rm ./src/sanity/extract.json"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
@@ -19,13 +19,11 @@
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.508.0",
     "next": "^14.2.29",
-    "next-sanity": "^0.8.5",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.5.0",
     "react-slick": "^0.30.3",
     "react-use-measure": "^2.1.1",
-    "sanity": "^2.36.6",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
