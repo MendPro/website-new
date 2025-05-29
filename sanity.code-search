@@ -1,0 +1,87 @@
+# Query: sanity
+# ContextLines: 1
+
+39 results - 8 files
+
+package.json:
+  
+
+README.md:
+   2  
+   3: Radiant is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org), with a blog powered by [Sanity](https://www.sanity.io).
+   4  
+
+  12  
+  13: Next, create a new Sanity project to power the blog within this template:
+  14  
+  15  ```bash
+  16: npm create sanity@latest -- --env=.env.local --create-project "Radiant Blog" --dataset production
+  17  ```
+  18  
+  19: This will prompt you to create a new Sanity account if you don't have one already. When asked "Would you like to add configuration files for a Sanity project in this Next.js folder?", choose "n".
+  20  
+
+  23  ```bash
+  24: npx sanity@latest dataset import seed.tar.gz
+  25  ```
+
+  34  
+  35: To manage your blog content, visit the embedded Sanity Studio at [http://localhost:3000/studio](http://localhost:3000/studio).
+  36  
+
+  51  - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+  52: - [Sanity](https://www.sanity.io) - the Sanity website
+
+sanity-typegen.json:
+  2    "path": "./src/**/*.{ts,tsx,js,jsx}",
+  3:   "schema": "./src/sanity/extract.json",
+  4:   "generates": "./src/sanity/types.ts"
+  5  }
+
+sanity.cli.ts:
+  1: import { defineCliConfig } from 'sanity/cli'
+  2  
+  3: const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+  4: const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
+  5  
+
+sanity.config.ts:
+  2  
+  3: import { visionTool } from '@sanity/vision'
+  4: import { defineConfig } from 'sanity'
+  5: import { structureTool } from 'sanity/structure'
+  6: import { apiVersion, dataset, projectId } from './src/sanity/env'
+  7: import { schema } from './src/sanity/schema'
+  8  
+
+src/app/blog/page.tsx:
+   7  import { Heading, Lead, Subheading } from '@/components/text'
+   8: import { image } from '@/sanity/image'
+   9  import {
+
+  13    getPostsCount,
+  14: } from '@/sanity/queries'
+  15  import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+
+src/app/blog/feed.xml/route.ts:
+  1: import { image } from '@/sanity/image'
+  2: import { getPostsForFeed } from '@/sanity/queries'
+  3  import { Feed } from 'feed'
+
+src/app/studio/[[...tool]]/page.tsx:
+   1  /**
+   2:  * This route is responsible for the built-in authoring environment using Sanity Studio.
+   3   * All routes under your studio path is handled by this file using Next.js' catch-all routes:
+
+   5   *
+   6:  * You can learn more about the next-sanity package here:
+   7:  * https://github.com/sanity-io/next-sanity
+   8   */
+   9  
+  10: import { NextStudio } from 'next-sanity/studio'
+  11: import config from '../../../../sanity.config'
+  12  
+
+  14  
+  15: export { metadata, viewport } from 'next-sanity/studio'
+  16  
